@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/shimmerCityName"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="@dimen/marginSmall"
+        android:layout_marginTop="85dp"
+        android:background="?attr/colorSurfaceVariant"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/shimmerWeatherImage"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_margin="@dimen/marginMid"
+        android:background="?attr/colorSurfaceVariant"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/shimmerCityName" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_margin="@dimen/marginSmall"
+        android:background="?attr/colorSurfaceVariant"
+        app:layout_constraintBottom_toBottomOf="@id/shimmerWeatherImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/shimmerWeatherImage" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/shimmerForecastText"
+        android:layout_width="150dp"
+        android:visibility="invisible"
+        android:layout_height="30dp"
+        android:layout_marginVertical="@dimen/marginSmall"
+        android:layout_marginStart="@dimen/marginMid"
+        android:background="?attr/colorSurfaceVariant"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/shimmerWeatherImage" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/shimmerForecastText">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/marginMid"
+            android:background="?attr/colorSurfaceVariant" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/marginMid"
+            android:background="?attr/colorSurfaceVariant" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/marginMid"
+            android:background="?attr/colorSurfaceVariant" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

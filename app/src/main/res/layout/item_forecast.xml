@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card"
+    android:layout_width="150dp"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/forecastImageView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/imageCardHeight"
+            android:background="?attr/colorControlHighlight"
+            android:contentDescription="@string/forecast_weather_image"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/storm" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/dateTextView"
+                android:layout_width="wrap_content"
+                style="?attr/textAppearanceHeadline6"
+                android:layout_height="wrap_content"
+                tools:text="date"
+                android:textStyle="bold|italic"
+                android:textAppearance="?attr/textAppearanceTitleMedium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/temperatureTextView"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                tools:text="25°C"
+                style="?attr/textAppearanceHeadline6"
+                android:textAppearance="?attr/textAppearanceBodyMedium"
+                android:textColor="?android:attr/textColorSecondary" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

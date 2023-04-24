@@ -43,4 +43,24 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+    <string name="forecast_weather_image">Forecast Weather Image</string>
+    <string name="search_a_city">Search a city</string>
+    <string name="rank">Rank:</string>
+    <string name="population">Population:</string>
+    <string name="see_details">See details..</string>
+    <string name="settings">Settings</string>
+    <string name="time_and_date">Time and Date: </string>
+    <string name="temperature">Temperature: </string>
+    <string name="precipitation_probability">Precipitation probability: </string>
+    <string name="see_more">See more…</string>
+    <string name="api_language">Api language</string>
+
+
+    <string name="todays_forecast_channel_id" translatable="false">todays_forecast_channel</string>
+    <string name="todays_forecast_channel_name" translatable="false">todays_forecast</string>
+    <string name="details">Details</string>
+    <string name="image_describing_today_s_weather">Image describing today\'s weather</string>
+    <string name="image_representating_today_s_weather">Image representating today\'s weather</string>
+    <string name="add_location_to_my_list">Add location to my list</string>
+    <string name="forecast">Forecast</string>
 </resources>

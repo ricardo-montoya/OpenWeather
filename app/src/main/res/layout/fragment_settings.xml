@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/marginMid"
+    android:orientation="vertical"
+    tools:context=".presentation.fragments.settings.SettingsFragment">
+
+    <TextView
+        style="?attr/textAppearanceHeadline3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/marginLarge"
+        android:text="@string/settings"
+        android:textStyle="bold" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/marginMid"
+        android:id="@+id/apiLanguageButton"
+        android:text="@string/api_language"
+        android:textAlignment="textStart"
+        android:textColor="?attr/colorOnBackground" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -30,23 +30,25 @@
         android:layout_height="wrap_content"
         android:singleLine="true"
         android:textAlignment="textStart"
+        android:visibility="invisible"
         app:flow_horizontalAlign="start"
         app:layout_constraintEnd_toStartOf="@id/selectLocationButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/appBarLayout"
-        tools:text="Mexico City" />
+        tools:text="Mexico City"
+        tools:visibility="visible" />
 
     <ImageButton
         android:id="@+id/selectLocationButton"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:background="?selectableItemBackgroundBorderless"
+        android:contentDescription="@string/image_representating_today_s_weather"
         android:paddingHorizontal="24dp"
         android:src="@drawable/ic_menu"
         app:layout_constraintBottom_toBottomOf="@id/locationNameTextView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/locationNameTextView"
-        android:contentDescription="@string/image_representating_today_s_weather" />
+        app:layout_constraintTop_toTopOf="@id/locationNameTextView" />
 
     <ImageView
         android:id="@+id/weatherImageView"

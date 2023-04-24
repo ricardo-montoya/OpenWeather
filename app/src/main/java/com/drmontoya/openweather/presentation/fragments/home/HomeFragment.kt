@@ -103,7 +103,7 @@ class HomeFragment : Fragment() {
 
     private fun loadWeatherViewsFromForecast(forecast: ForecastDTO) {
         val index = viewModel.getCurrentTimeIndex(forecast.hourly.time) ?: 0
-        binding.locationNameTextView.visibility = View.INVISIBLE
+        binding.locationNameTextView.visibility = View.VISIBLE
         binding.weatherImageView.visibility = View.VISIBLE
         binding.seeMoreButton.visibility = View.VISIBLE
         binding.currentTemperatureTextView.text =
